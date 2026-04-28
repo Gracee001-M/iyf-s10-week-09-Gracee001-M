@@ -1,8 +1,5 @@
 
-Task 17.4: Loading & Error States 🔴
-Time: 45 minutes
 
-Exercise: Professional Loading/Error Handling
 
 // components/shared/LoadingSpinner.jsx
 function LoadingSpinner({ size = 'medium', text = 'Loading...' }) {
