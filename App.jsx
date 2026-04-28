@@ -228,3 +228,29 @@ function App() {
 
 // App.jsx
 <Route path="posts/:postId" element={<PostDetail />} />
+
+import { useNavigate, NavLink } from 'react-router-dom';
+
+function Navigation() {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        // Clear user data here
+        navigate('/'); // Redirect to home
+    };
+
+    return (
+        <nav>
+            <NavLink 
+                to="/" 
+                className={({ isActive }) => isActive ? 'active' : ''}
+            >
+                Home
+            </NavLink>
+            <NavLink to="/posts">Posts</NavLink>
+            <NavLink to="/about">About</NavLink>
+
+            <button onClick={handleLogout}>Logout</button>
+        </nav>
+    );
+}
