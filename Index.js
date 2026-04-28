@@ -4,3 +4,6 @@ export { default as Input } from './Input';
 export { default as Card } from './Card';
 export { default as Modal } from './Modal';
 export { default as Avatar } from './Avatar';
+
+
+import { Button, Input, Card } from '../components/shared';
